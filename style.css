@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Poppins", "Fraktion Mono";
 }
 
@@ -36,6 +37,9 @@ nav a {
   text-decoration: none;
   font-size: 20px;
   color: rgb(255, 255, 255);
+}
+.hamburger_icon {
+  display: none;
 }
 
 nav h1 {
@@ -96,7 +100,7 @@ nav a:hover {
 }
 
 .block.highlight {
-  border-color:rgb(185, 0, 241);
+  border-color: rgb(185, 0, 241);
 }
 
 .snake {
@@ -107,136 +111,139 @@ nav a:hover {
   background-color: red;
 }
 
-.hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 25%;
-    width: 100%;
-    pointer-events: none;
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  pointer-events: none;
 }
 .highlight {
-    border-color: rgb(185, 0, 241);
+  border-color: rgb(185, 0, 241);
 }
-.hero-section{
-    z-index: 99999;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 390px;
-    button{
-      a{
-        text-decoration: none;
-        color: black;
-      }
-        margin-top: 10px;
-        cursor: pointer;
-        display: inline-block;
-        padding: .75rem 1.25rem;
-        border-radius: 10rem;
-        color: black;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 1.15rem;
-        letter-spacing: .15rem;
-        transition: all .3s;
-        position: relative;
-        overflow: hidden;
-        pointer-events: auto;
+.hero-section {
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 390px;
+  button {
+    a {
+      text-decoration: none;
+      color: black;
     }
-    button:hover{
-        font-weight: 900;
-    }
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.15rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    pointer-events: auto;
+  }
+  button:hover {
+    font-weight: 900;
+  }
 }
-.hero-section p{
-font-size: 1.5rem;
-color: white;
-font-weight: 100;
+.hero-section p {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 100;
 }
 .images {
-    width: 60%;
-    margin: 10em auto;
-    display: flex;
-    gap: 10em;
+  width: 60%;
+  margin: 10em auto;
+  display: flex;
+  gap: 10em;
 }
 
 .col {
-    flex: 1;
+  flex: 1;
 }
 
 .col:nth-child(2) {
-    margin-top: 15em;
+  margin-top: 15em;
 }
 
 .img {
-    width: 100%;
-    border: 2px solid rgb(213, 0, 100);
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 10px;
-    margin-bottom: 10em;
- }
-.cont{
+  width: 100%;
+  border: 2px solid rgb(213, 0, 100);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  margin-bottom: 10em;
+}
+.cont {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 9rem;
+  font-weight: bolder;
+  width: 500px;
+  pointer-events: auto;
+}
+.mirror:hover {
+  filter: drop-shadow(purple 0px 5px 15px);
+}
+.icons {
+  width: 250px;
+  z-index: 99999;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons i{
+  cursor: pointer;
+}
+.video {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 180px;
+  font-size: 1.35rem;
+  padding: 10px;
+  a {
+    text-decoration: none;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    font-size: 9rem;
-    font-weight: bolder;
-    width:500px;
-    pointer-events: auto;
+  }
 }
-.mirror:hover{
-    filter: drop-shadow(purple 0px 5px 15px);
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
 }
-.icons{
-    width: 250px;
-    z-index: 99999;
-    font-size: 2rem;
-    color:white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+  left: 0;
+  color: white;
+  bottom: 0;
+  margin-bottom: 10px;
+  align-items: center;
+  font-size: 1.5rem;
 }
-.video{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 180px;
-    font-size: 1.35rem;
-    padding:10px;
-    a{
-      text-decoration: none;
-      color: white;
-    }
-}
-.socials{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 400px;
-}
-footer{
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-    width: 100%;
-    left: 0;
-    color: white;
-    bottom: 0;
-    margin-bottom: 10px;
-    align-items: center;
-    font-size: 1.5rem;
-}
-.controls{
+.controls {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width:450px;
-  button{
+  width: 450px;
+  button {
     font-family: "Poppins";
     font-weight: 500;
     height: 50px;
@@ -246,646 +253,836 @@ footer{
     border-radius: 25px;
   }
 }
-.experiment-title{
+.experiment-title {
   cursor: pointer;
-  pointer-events:auto;
+  pointer-events: auto;
   color: white;
 }
-.portfolio-experiment, .scene {
-    width: 300px;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-display: flex;
-    -webkit-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    -webkit-align-items: center;
-  }
-  
-  .portfolio-experiment {
-    color:white;
-    font-size: 1.5rem;
-  }
-  .portfolio-experiment .experiment-title,
-  .portfolio-experiment .experiment-title * {
-    -webkit-animation: cray 6s infinite steps(50);
-            animation: cray 6s infinite steps(50);
-  }
-  @-webkit-keyframes cray {
-    2% {
-      font-weight: 600;
-      font-style: italic;
-      text-decoration: line-through;
-      text-transform: uppercase;
-    }
-    4% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    6% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    8% {
-      font-weight: 500;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: uppercase;
-    }
-    10% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    12% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
-    14% {
-      font-weight: 600;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    16% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: line-through;
-      text-transform: none;
-    }
-    18% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    20% {
-      font-weight: 500;
-      font-style: italic;
-      text-decoration: underline;
-      text-transform: uppercase;
-    }
-    22% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: line-through;
-      text-transform: none;
-    }
-    24% {
-      font-weight: 500;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    26% {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    28% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    30% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    32% {
-      font-weight: 200;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: none;
-    }
-    34% {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    36% {
-      font-weight: 400;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
-    38% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    40% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-    42% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    44% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
-    46% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    48% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    50% {
-      font-weight: 100;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: none;
-    }
-    52% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: capitalize;
-    }
-    54% {
-      font-weight: 200;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
-    56% {
-      font-weight: 100;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-    58% {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
-    60% {
-      font-weight: 200;
-      font-style: italic;
-      text-decoration: line-through;
-      text-transform: none;
-    }
-    62% {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: capitalize;
-    }
-    64% {
-      font-weight: 500;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    66% {
-      font-weight: 400;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: none;
-    }
-    68% {
-      font-weight: 200;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    70% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    72% {
-      font-weight: 200;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    74% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    76% {
-      font-weight: 200;
-      font-style: italic;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    78% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    80% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    82% {
-      font-weight: 500;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    84% {
-      font-weight: 400;
-      font-style: italic;
-      text-decoration: line-through;
-      text-transform: capitalize;
-    }
-    86% {
-      font-weight: 600;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: none;
-    }
-    88% {
-      font-weight: 200;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    90% {
-      font-weight: 400;
-      font-style: italic;
-      text-decoration: underline;
-      text-transform: lowercase;
-    }
-    92% {
-      font-weight: 200;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    94% {
-      font-weight: 200;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: none;
-    }
-    96% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: line-through;
-      text-transform: none;
-    }
-    98% {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-  }
-  @keyframes cray {
-    2% {
-      font-weight: 600;
-      font-style: italic;
-      text-decoration: line-through;
-      text-transform: uppercase;
-    }
-    4% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    6% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    8% {
-      font-weight: 500;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: uppercase;
-    }
-    10% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    12% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
-    14% {
-      font-weight: 600;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    16% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: line-through;
-      text-transform: none;
-    }
-    18% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    20% {
-      font-weight: 500;
-      font-style: italic;
-      text-decoration: underline;
-      text-transform: uppercase;
-    }
-    22% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: line-through;
-      text-transform: none;
-    }
-    24% {
-      font-weight: 500;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    26% {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    28% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    30% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    32% {
-      font-weight: 200;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: none;
-    }
-    34% {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    36% {
-      font-weight: 400;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
-    38% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    40% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-    42% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    44% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
-    46% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    48% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    50% {
-      font-weight: 100;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: none;
-    }
-    52% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: capitalize;
-    }
-    54% {
-      font-weight: 200;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
-    56% {
-      font-weight: 100;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-    58% {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: lowercase;
-    }
-    60% {
-      font-weight: 200;
-      font-style: italic;
-      text-decoration: line-through;
-      text-transform: none;
-    }
-    62% {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: capitalize;
-    }
-    64% {
-      font-weight: 500;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    66% {
-      font-weight: 400;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: none;
-    }
-    68% {
-      font-weight: 200;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    70% {
-      font-weight: 300;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    72% {
-      font-weight: 200;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    74% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    76% {
-      font-weight: 200;
-      font-style: italic;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    78% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    80% {
-      font-weight: 700;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    82% {
-      font-weight: 500;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    84% {
-      font-weight: 400;
-      font-style: italic;
-      text-decoration: line-through;
-      text-transform: capitalize;
-    }
-    86% {
-      font-weight: 600;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: none;
-    }
-    88% {
-      font-weight: 200;
-      font-style: normal;
-      text-decoration: underline;
-      text-transform: none;
-    }
-    90% {
-      font-weight: 400;
-      font-style: italic;
-      text-decoration: underline;
-      text-transform: lowercase;
-    }
-    92% {
-      font-weight: 200;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-    94% {
-      font-weight: 200;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: none;
-    }
-    96% {
-      font-weight: 100;
-      font-style: normal;
-      text-decoration: line-through;
-      text-transform: none;
-    }
-    98% {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-    }
-  }
-  .line-1{
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%); 
-    border-right:2px solid white;   
+.portfolio-experiment,
+.scene {
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-display: flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
 }
 
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1 normal both,
-             blinkTextCursor 1000ms steps(44) infinite normal ;
-  animation-delay: 1s,2s;
+.portfolio-experiment {
+  color: white;
+  font-size: 1.5rem;
+}
+.portfolio-experiment .experiment-title,
+.portfolio-experiment .experiment-title * {
+  -webkit-animation: cray 6s infinite steps(50);
+  animation: cray 6s infinite steps(50);
+}
+@-webkit-keyframes cray {
+  2% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: uppercase;
+  }
+  4% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  6% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  8% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  10% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  12% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  14% {
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  16% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  18% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  20% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  22% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  24% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  26% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  28% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  30% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  32% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  34% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  36% {
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  38% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  40% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  42% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  44% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  46% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  48% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  50% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  52% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  54% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  56% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  58% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  60% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  62% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  64% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  66% {
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  68% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  70% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  72% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  74% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  76% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  78% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  80% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  82% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  84% {
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: capitalize;
+  }
+  86% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  88% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  90% {
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: lowercase;
+  }
+  92% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  94% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  96% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  98% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+}
+@keyframes cray {
+  2% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: uppercase;
+  }
+  4% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  6% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  8% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  10% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  12% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  14% {
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  16% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  18% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  20% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  22% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  24% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  26% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  28% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  30% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  32% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  34% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  36% {
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  38% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  40% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  42% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  44% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  46% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  48% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  50% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  52% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  54% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  56% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  58% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  60% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  62% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  64% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  66% {
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  68% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  70% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  72% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  74% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  76% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  78% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  80% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  82% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  84% {
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: capitalize;
+  }
+  86% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  88% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  90% {
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: lowercase;
+  }
+  92% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  94% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  96% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  98% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+}
+.line-1 {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  border-right: 2px solid white;
+}
+
+.anim-typewriter {
+  animation: typewriter 4s steps(44) infinite normal,
+    blinkTextCursor 1000ms steps(44) infinite normal;
+  animation-delay: 0s, 3s;
 }
 @keyframes typewriter {
-from{ width: 0; }
-to{ width: 24em; } /* Ensures the text resets for the next iteration */
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  } /* Ensures the text resets for the next iteration */
 }
 
 @keyframes blinkTextCursor {
-  from { border-right-color: rgba(255,255,255,.75); }
-  to{ border-right-color: transparent; }
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
+
+@media only screen and (max-width: 600px) {
+  .cont {
+    font-size: 4rem;
+    width: 300px;
+  }
+  .content nav h1 {
+    font-size: 24px;
+    padding: 0px;
+    margin-left: 1rem;
+    z-index: -1;
+  }
+  .ref {
+    width: 250px;
+    display: none;
+  }
+  .ref a {
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .hamburger {
+    padding: 4px;
+    color: white;
+    margin-right: 1rem;
+  }
+  .closebutton {
+    color: #ffffff;
+    margin: 0 0 70px 2rem;
+    padding: 10px 20px;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .closebutton:hover {
+    background-color: rgb(255, 52, 52);
+  }
+  .hero-section p {
+    font-size: 16px;
+    font-weight: 200;
+  }
+  .line-2 {
+    margin: 0 2rem 0 2rem;
+    font-size: 14px;
+    text-align: center;
+  }
+  .hero button {
+    width: auto;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+  }
+  .hamburger_icon {
+    display: block;
+    cursor: pointer;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #000000;
+    z-index: 100000;
+    display: none;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    border-right: 4px solid #f1f1f1;
+  }
+
+  .sidebar .refe a {
+    padding: 25px;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    text-align: start;
+  }
+
+  .sidebar .refe a:hover {
+    color: #849aff;
+  }
+
+  /* Show sidebar when a specific class is added */
+  .sidebar.active {
+    display: block; /* Show the sidebar */
+  }
+
+  .hamburger_icon {
+    cursor: pointer;
+  }
+
+  .hamburger_icon:hover {
+    color: #f1f1f1;
+  }
+  .socialss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    right: 20px;
+    /* margin-top: 350px; */
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    width: 200px;
+  }
+  .iconss {
+    width: 250px;
+    z-index: 99999;
+    font-size: 26px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .socials {
+    display: none;
+  }
+  .controls {
+    margin-bottom: 10px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    button {
+      font-family: "Poppins";
+      font-weight: 500;
+      height: 30px;
+      width: 120px;
+      font-size: 16px;
+      border: 2px solid black;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: rgb(141, 141, 141);
+    }
+  }
+  .experiment-title{
+    display: none;
+  }
+  .video {
+    display: none;
+  }
+}
+/* .sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: red;
+  padding-top: 20px;
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+.sidebar .refe a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar .refe a:hover {
+  background-color: #575757;
+}
+
+.hamburger_contents {
+  padding-left: 15px;
+} */
